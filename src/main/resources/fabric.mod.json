@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "felmoncapes",
+  "version": "${version}",
+  "name": "FelmonCapes",
+  "description": "Customizable capes system by An1by",
+  "authors": [
+    "An1by"
+  ],
+  "contact": {
+    "website": "https://aniby.ru",
+    "repo": "https://github.com/An1by/FelmonCapes"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/felmoncapes/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ru.aniby.felmoncapes.FelmonCapesClient"
+    ],
+    "main": [
+      "ru.aniby.felmoncapes.FelmonCapes"
+    ]
+  },
+  "mixins": [
+    "felmoncapes.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
